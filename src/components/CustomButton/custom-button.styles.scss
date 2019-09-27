@@ -1,0 +1,18 @@
+.custom-button {
+  background-color: rgb(255, 100, 0);
+  color: white;
+  height: 45px;
+  width: 40%;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background-color: #fc7f2b;
+  }
+
+  &:active {
+    transform: translateY(0.5px);
+    filter: saturate(300%);
+  }
+}

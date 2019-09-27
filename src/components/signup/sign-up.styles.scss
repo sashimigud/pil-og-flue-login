@@ -1,0 +1,17 @@
+.signup-container {
+  width: 50%;
+  margin: 0 auto;
+
+  .signup-header {
+    margin-top: 70px;
+    font-size: 50px;
+    font-weight: 200;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 auto;
+  }
+}

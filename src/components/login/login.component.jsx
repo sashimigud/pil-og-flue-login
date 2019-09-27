@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./login.styles.scss";
 
-import CustomInput from "../CustomInput/custom-input.component";
+import CustomInput from "../customInput/custom-input.component";
+import CustomButton from "../customButton/custom-button.component";
 
 const Login = () => {
   const [{ username, email }, setCredentials] = useState({
     username: "",
     email: ""
   });
-  const [attendingDinner, setAttendingDinner] = useState(false);
+
+  // const [user, setUser] = useState(null);
 
   const handleChange = ({ target: { name, value } }) => {
-    console.log("name: " + name + "and value:" + value);
+    console.log("name: " + name + " and value:" + value);
     setCredentials(prevState => ({ ...prevState, [name]: value }));
   };
 
@@ -29,13 +31,13 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <form className="login-form" onSubmit={handleSubmit}>
+      <h2 className="login-header">SIGN IN:</h2>
+      <form className="login-form" onSubmit={handleSubmit} autoComplete="off">
         <CustomInput
           label="username"
           handleChange={handleChange}
           value={username}
           type="text"
-          name="username"
           placeholder="Username"
         />
         <CustomInput
@@ -43,10 +45,9 @@ const Login = () => {
           handleChange={handleChange}
           value={email}
           type="text"
-          name="email"
           placeholder="Email"
         />
-        <button>Log in</button>
+        <CustomButton>SIGN IN</CustomButton>
       </form>
     </div>
   );

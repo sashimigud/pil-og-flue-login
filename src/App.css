@@ -1,8 +1,24 @@
 .App {
   text-align: center;
+  background-color: #f7f8fc;
 }
 
-.container {
+.app-container {
   height: 100vh;
-  padding-top: 10vh;
+  overflow-y: scroll;
+}
+
+.pof-heading {
+  font-family: "Mansalva", cursive;
+  font-size: 120px;
+  color: #454443;
+  padding-top: 50px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.bouvet-logo {
+  margin-top: 50px;
+  width: 300px;
+  height: 150px;
 }

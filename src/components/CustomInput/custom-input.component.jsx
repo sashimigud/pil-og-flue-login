@@ -4,8 +4,13 @@ import "./custom-input.styles.scss";
 const CustomInput = ({ handleChange, label }) => {
   return (
     <>
-      <label>{label}:</label>
-      <input onChange={handleChange} placeholder={label} />
+      <label className="custom-input-label">{label.toUpperCase()}:</label>
+      <input
+        className="custom-input"
+        onChange={handleChange}
+        placeholder="..."
+        name={label}
+      />
     </>
   );
 };

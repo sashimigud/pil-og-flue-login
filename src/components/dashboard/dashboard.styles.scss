@@ -1,0 +1,34 @@
+.dashboard-container {
+  margin: 70px auto 0;
+}
+
+.dash-button-container {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.user-greeting {
+  font-weight: 100;
+}
+
+.user-message {
+  font-size: 40px;
+}
+
+.logout-button {
+  all: unset;
+  background: none;
+  height: 35px;
+  width: 100px;
+  margin: 0 auto;
+  outline: none;
+  border: 0.7px solid black;
+
+  &:hover {
+    background-color: #ffac59;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}

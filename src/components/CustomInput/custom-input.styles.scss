@@ -1,12 +1,14 @@
-input {
-  height: 20px;
+.custom-input {
+  height: 30px;
   padding: 5px;
   margin-top: 5px;
   margin-bottom: 50px;
+  text-align: center;
+  font-size: 21px;
 }
 
-label {
-  color: orange;
+.custom-input-label {
+  color: rgb(255, 100, 0);
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 100;
 }
