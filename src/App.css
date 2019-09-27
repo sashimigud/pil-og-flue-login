@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   background-color: #f7f8fc;
@@ -9,12 +13,13 @@
 }
 
 .pof-heading {
-  font-family: "Mansalva", cursive;
-  font-size: 120px;
+  /* font-family: "Mansalva", cursive; */
+  font-family: "Press Start 2P", cursive;
+  font-size: 85px;
   color: #454443;
-  padding-top: 50px;
+  padding-top: 90px;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
 
 .bouvet-logo {

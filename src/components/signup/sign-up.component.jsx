@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./sign-up.styles.scss";
-import bouvetLogo from "../../assets/Bouvet-logo.png";
 
 import CustomInput from "../customInput/custom-input.component";
 import CustomButton from "../customButton/custom-button.component";
