@@ -23,11 +23,11 @@ const Dashboard = ({ history }) => {
           TOGGLE UPDATE DETAILS
         </CustomButton>
       </div>
+      {showPanel ? <SignUp>UPDATE DETAILS</SignUp> : null}
       <p>OR</p>
       <button onClick={() => history.push("/")} className="logout-button">
         LOG OUT
       </button>
-      {showPanel ? <SignUp>UPDATE DETAILS</SignUp> : null}
     </div>
   );
 };
