@@ -15,7 +15,7 @@ const Login = ({ history }) => {
   // const [user, setUser] = useState(null);
 
   const handleChange = ({ target: { name, value } }) => {
-    console.log("name: " + name + " and value:" + value);
+    // console.log("name: " + name + " and value:" + value);
     setCredentials(prevState => ({ ...prevState, [name]: value }));
   };
 

@@ -10,7 +10,6 @@ const Dashboard = ({ history }) => {
 
   const handleClick = () => {
     setShowPanel(!showPanel);
-    console.log("klikked");
   };
 
   return (
