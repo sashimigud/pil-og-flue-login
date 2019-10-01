@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./login.styles.scss";
 
+import { withRouter } from "react-router-dom";
+
 import CustomInput from "../customInput/custom-input.component";
 import CustomButton from "../customButton/custom-button.component";
 
-const Login = () => {
+const Login = ({ history }) => {
   const [{ username, email }, setCredentials] = useState({
     username: "",
     email: ""
@@ -47,10 +49,12 @@ const Login = () => {
           type="text"
           placeholder="Email"
         />
-        <CustomButton>SIGN IN</CustomButton>
+        <CustomButton handleClick={() => history.push("/dashboard")}>
+          SIGN IN
+        </CustomButton>
       </form>
     </div>
   );
 };
 
-export default Login;
+export default withRouter(Login);

@@ -4,8 +4,9 @@ import "./sign-up.styles.scss";
 import CustomInput from "../customInput/custom-input.component";
 import CustomButton from "../customButton/custom-button.component";
 import CustomCheckbox from "../customCheckbox/custom-checkbox.component";
+import { withRouter } from "react-router-dom";
 
-const SignUp = ({ children }) => {
+const SignUp = ({ children, history, mode }) => {
   const [{ username, email }, setCredentials] = useState({
     username: "",
     email: ""
@@ -17,10 +18,10 @@ const SignUp = ({ children }) => {
     setCredentials(prevState => ({ ...prevState, [name]: value }));
   };
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    console.log("submit fired!", username, email);
-  };
+  // const handleSubmit = event => {
+  //   event.preventDefault();
+  //   console.log("submit fired!", username, email);
+  // };
 
   // useEffect(() => {
   //   let url = "https://jsonplaceholder.typicode.com/";
@@ -32,7 +33,7 @@ const SignUp = ({ children }) => {
   return (
     <div className="signup-container">
       <h2 className="signup-header">{children}:</h2>
-      <form className="signup-form" onSubmit={handleSubmit} autoComplete="off">
+      <form className="signup-form" autoComplete="off">
         <CustomInput
           label="username"
           handleChange={handleChange}
@@ -48,10 +49,16 @@ const SignUp = ({ children }) => {
           placeholder="Email"
         />
         <CustomCheckbox />
-        <CustomButton>{children}</CustomButton>
+        <CustomButton
+          handleClick={() => {
+            history.push("/dashboard");
+          }}
+        >
+          {children}
+        </CustomButton>
       </form>
     </div>
   );
 };
 
-export default SignUp;
+export default withRouter(SignUp);

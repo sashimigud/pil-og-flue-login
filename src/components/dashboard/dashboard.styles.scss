@@ -1,9 +1,13 @@
+$small: 800px;
+$medium: 1000px;
+$large: 1600px;
+$xLarge: 1950px;
+
 .dashboard-container {
   margin: 70px auto 0;
 }
-
 .dash-button-container {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -30,5 +34,35 @@
 
   &:active {
     transform: translateY(1px);
+  }
+}
+
+@media screen and (min-width: $large) {
+  .dash-button-container {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: $xLarge) {
+  .dash-button-container {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .dash-button-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $small) and (max-width: $medium) {
+  .dash-button-container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: $medium) and (max-width: $large) {
+  .dash-button-container {
+    width: 50%;
   }
 }

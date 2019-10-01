@@ -1,5 +1,8 @@
+$small: 900px;
+$medium: 1300px;
+
 .login-container {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
   border-radius: 2%;
 
@@ -14,5 +17,11 @@
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .login-container {
+    width: 60%;
   }
 }

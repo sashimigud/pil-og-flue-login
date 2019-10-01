@@ -2,7 +2,7 @@ import React from "react";
 import bouvetLogo from "./assets/Bouvet-logo.png";
 import "./App.css";
 
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import Home from "./components/home/home.component";
 import Login from "./components/login/login.component";
@@ -19,6 +19,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/signup" render={() => <SignUp>SIGN UP</SignUp>} />
           <Route path="/dashboard" component={Dashboard} />
+          <Route render={() => <Redirect to="/" />} />
         </Switch>
         <img className="bouvet-logo" src={bouvetLogo} alt="Bouvet logo" />
       </div>

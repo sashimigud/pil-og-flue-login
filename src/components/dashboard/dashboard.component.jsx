@@ -3,7 +3,9 @@ import "./dashboard.styles.scss";
 import SignUp from "../signup/sign-up.component";
 import CustomButton from "../customButton/custom-button.component";
 
-const Dashboard = () => {
+import { withRouter } from "react-router-dom";
+
+const Dashboard = ({ history }) => {
   const [showPanel, setShowPanel] = useState(false);
 
   const handleClick = () => {
@@ -23,10 +25,12 @@ const Dashboard = () => {
         </CustomButton>
       </div>
       <p>OR</p>
-      <button className="logout-button">LOG OUT</button>
+      <button onClick={() => history.push("/")} className="logout-button">
+        LOG OUT
+      </button>
       {showPanel ? <SignUp>UPDATE DETAILS</SignUp> : null}
     </div>
   );
 };
 
-export default Dashboard;
+export default withRouter(Dashboard);

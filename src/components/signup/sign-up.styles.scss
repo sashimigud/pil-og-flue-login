@@ -1,3 +1,6 @@
+$small: 900px;
+$medium: 1300px;
+
 .signup-container {
   width: 50%;
   margin: 0 auto;
@@ -13,5 +16,11 @@
     flex-direction: column;
     width: 55%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .signup-container {
+    width: 80%;
   }
 }

@@ -4,17 +4,16 @@ $large: 2000px;
 
 .home-container {
   display: flex;
-  width: 40%;
+  width: 60%;
   margin: 20px auto;
-  margin-top: 50px;
+  margin-top: 200px;
   flex-direction: row;
+  height: 300px;
 
   .left-panel {
-    height: 300px;
     padding: 30px;
     flex: 1;
-    margin-right: 15px;
-    border: 0.5px solid black;
+    margin-right: 20px;
     flex-direction: column;
   }
 
@@ -23,16 +22,82 @@ $large: 2000px;
   }
 
   .right-panel {
-    height: 300px;
-    margin-left: 15px;
+    margin-left: 20px;
     flex: 1;
     padding: 30px;
-    border: 0.5px solid black;
     flex-direction: column;
   }
 
   .sign-up-link h1 {
     font-weight: 100;
+  }
+
+  .home-nav-link {
+    text-decoration: none;
+    color: rgb(255, 100, 0);
+    font-weight: 100;
+    font-size: 40px;
+    display: block;
+
+    animation-name: wiggle;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  .wiggle {
+    color: #d46d2a;
+    animation-name: wiggle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  .pulse {
+    color: #595654;
+    animation-name: pulse;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(5deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -50,12 +115,6 @@ $large: 2000px;
 
 @media screen and (min-width: $medium) {
   .home-container {
-    width: 30%;
-  }
-}
-
-@media screen and (min-width: $large) {
-  .home-container {
-    width: 25%;
+    width: 40%;
   }
 }
