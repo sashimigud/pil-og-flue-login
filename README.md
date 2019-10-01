@@ -1,3 +1,20 @@
+## Check the live code:
+
+This project is live on github pages:
+
+
+## Setup locally (development mode)
+
+prerequisites: recent version of node/npm
+
+1. Clone repo
+2. Change directory to project-folder 
+3. Run "npm install" or "npm i" for short
+4. Run "npm start"
+5. Open browser of choice and go to localhost:3000 
+
+usually port = 3000, but that might differ, use the port shown in your console.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
