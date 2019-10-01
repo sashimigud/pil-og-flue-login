@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pil-og-flue-login/static/css/main.b26db302.chunk.css",
+    "main.css": "/pil-og-flue-login/static/css/main.cbbc25a9.chunk.css",
     "main.js": "/pil-og-flue-login/static/js/main.840521ce.chunk.js",
     "main.js.map": "/pil-og-flue-login/static/js/main.840521ce.chunk.js.map",
     "runtime-main.js": "/pil-og-flue-login/static/js/runtime-main.897eae90.js",
@@ -8,9 +8,9 @@
     "static/js/2.7bad4ed8.chunk.js": "/pil-og-flue-login/static/js/2.7bad4ed8.chunk.js",
     "static/js/2.7bad4ed8.chunk.js.map": "/pil-og-flue-login/static/js/2.7bad4ed8.chunk.js.map",
     "index.html": "/pil-og-flue-login/index.html",
-    "precache-manifest.d4cf9528cce28c8698060ac1ee8fbe3c.js": "/pil-og-flue-login/precache-manifest.d4cf9528cce28c8698060ac1ee8fbe3c.js",
+    "precache-manifest.8831ca66739fe4015b10c300d016e0c6.js": "/pil-og-flue-login/precache-manifest.8831ca66739fe4015b10c300d016e0c6.js",
     "service-worker.js": "/pil-og-flue-login/service-worker.js",
-    "static/css/main.b26db302.chunk.css.map": "/pil-og-flue-login/static/css/main.b26db302.chunk.css.map",
+    "static/css/main.cbbc25a9.chunk.css.map": "/pil-og-flue-login/static/css/main.cbbc25a9.chunk.css.map",
     "static/media/Bouvet-logo.png": "/pil-og-flue-login/static/media/Bouvet-logo.5fb48959.png"
   }
 }
