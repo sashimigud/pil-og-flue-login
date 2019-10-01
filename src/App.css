@@ -8,8 +8,9 @@
 }
 
 .app-container {
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: scroll;
+  position: relative;
 }
 
 .pof-heading {
@@ -23,7 +24,29 @@
 }
 
 .bouvet-logo {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 300px;
   height: 150px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-height: 600px) {
+  .pof-heading {
+    font-size: 70px;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+  .bouvet-logo {
+    width: 250px;
+    height: 125px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-height: 768px) {
+  .bouvet-logo {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
 }
