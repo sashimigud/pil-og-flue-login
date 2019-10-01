@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pil-og-flue-login/precache-manifest.cfff377ff286a7c4f3abc1061f4cd2a9.js"
+  "/pil-og-flue-login/precache-manifest.d4cf9528cce28c8698060ac1ee8fbe3c.js"
 );
 
 self.addEventListener('message', (event) => {
