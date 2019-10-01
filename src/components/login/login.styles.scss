@@ -1,10 +1,9 @@
-$small: 900px;
-$medium: 1300px;
+$small: 825px;
+$medium: 1500px;
 
 .login-container {
-  width: 40%;
+  width: 25%;
   margin: 0 auto;
-  border-radius: 2%;
 
   .login-header {
     margin-top: 100px;
@@ -15,13 +14,31 @@ $medium: 1300px;
   .login-form {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: $medium) {
   .login-container {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .login-container {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .login-container {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .login-container {
+    width: 15%;
   }
 }

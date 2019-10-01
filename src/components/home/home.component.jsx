@@ -8,7 +8,7 @@ const Home = () => {
       <div className="left-panel">
         <div className="login-link">
           <Link className="home-nav-link pulse" to="/login">
-            LOGIN HERE
+            PLAY NOW
           </Link>
         </div>
       </div>

@@ -33,24 +33,16 @@ const Login = ({ history }) => {
 
   return (
     <div className="login-container">
-      <h2 className="login-header">SIGN IN:</h2>
+      <h2 className="login-header">PLAY NOW</h2>
       <form className="login-form" onSubmit={handleSubmit} autoComplete="off">
         <CustomInput
           label="username"
           handleChange={handleChange}
           value={username}
           type="text"
-          placeholder="Username"
-        />
-        <CustomInput
-          label="email"
-          handleChange={handleChange}
-          value={email}
-          type="text"
-          placeholder="Email"
         />
         <CustomButton handleClick={() => history.push("/dashboard")}>
-          SIGN IN
+          PLAY
         </CustomButton>
       </form>
     </div>
